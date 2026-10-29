@@ -1,0 +1,10 @@
+title: CharmanY1n 的博客
+description: 记录 AI、Agent 与递归自我改进
+url: "https://CharmanY1n.github.io"
+baseurl: ""
+timezone: Asia/Shanghai
+theme: minima
+markdown: kramdown
+future: false
+exclude:
+  - "RSI与深度学习.md"
