@@ -26,7 +26,7 @@ math: true
 
 普通监督学习中,标签是:
 
-```Plain Text
+```plaintext
 猫: 1
 狗: 0
 狐狸: 0
@@ -37,7 +37,7 @@ math: true
 
 但是,一个训练好的teacher可能给出
 
-```Plain Text
+```plaintext
 猫: 0.90
 狗: 0.07
 狐狸: 0.02
@@ -66,7 +66,7 @@ Hinton将其中有价值的信息称为 **Dark Knowledge**
 
 一个典型的蒸馏损失可以写成:
 
-$L = \alpha L_{CE}(y,p_s) + (1-\alpha)T^2 D_{KL}(p_t^T||p_s^T)$
+$L = \alpha L_{CE}(y,p_s) + (1-\alpha)T^2 D_{KL}(p_t^T \Vert p_s^T)$
 
 其中:
 
@@ -194,7 +194,7 @@ Teacher是通过真实标签训练出来的,而Student除了真实标签,还学�
 
 假设有一个CNN网络:
 
-```Plain Text
+```plaintext
 Input
   |
 Layer 1
@@ -263,7 +263,7 @@ Layer 6
 
 假设Teacher输出: 
 
-```Plain Text
+```plaintext
 猫: 0.90
 狗: 0.07
 狐狸: 0.02
@@ -274,7 +274,7 @@ Layer 6
 
 那么,如果把非最高概率类别的概率随机打乱,会怎么样
 
-```Plain Text
+```plaintext
 猫: 0.90 -> 0.90
 狗: 0.07 -> 0.01
 狐狸: 0.02 -> 0.07
@@ -453,7 +453,7 @@ iBOT 则进一步研究局部 Patch 表示。
 
 例如，一张图片被切成：
 
-```Plain Text
+```plaintext
 [Patch 1] [Patch 2] [Patch 3]
 [Patch 4] [Patch 5] [Patch 6]
 [Patch 7] [Patch 8] [Patch 9]
@@ -587,7 +587,7 @@ data2vec 则让 Student 预测 Teacher 的上下文隐藏表示（Contextualized
 
 假设 Teacher 执行一个任务：
 
-```Markdown
+```markdown
 1. 打开目标网站
 2. 检查登录状态
 3. 搜索目标商品
